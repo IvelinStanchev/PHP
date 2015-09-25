@@ -4,7 +4,7 @@
 	include_once 'functions/database.php';
 	include_once 'functions/general.php';
 
-	if(isset($_GET['id']) && !empty($_GET['id'])){
+	if(isset($_GET['id']) && !empty($_GET['id']) && $_GET['action'] === "delete"){
 		deleteToDo($_GET['id']);
 	}
 	
